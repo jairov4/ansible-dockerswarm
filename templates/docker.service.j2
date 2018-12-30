@@ -14,7 +14,7 @@ Type=notify
 ExecReload=/bin/kill -s HUP $MAINPID
 Delegate=yes
 KillMode=process
-ExecStart=/usr/bin/docker daemon \
+ExecStart=/usr/bin/dockerd \
           $DOCKER_OPTS \
           $DOCKER_STORAGE_OPTIONS \
           $DOCKER_NETWORK_OPTIONS \
