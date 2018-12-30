@@ -5,8 +5,9 @@ docker_pubkey_server: "hkp://ha.pool.sks-keyservers.net:80"
 
 docker_apt_repo: "deb https://apt.dockerproject.org/repo {{ ansible_distribution | lower }}-{{ ansible_distribution_release }} {{ docker_repo }}"
 
-docker_yum_repo: "https://yum.dockerproject.org/repo/{{ docker_repo }}/centos/7"
-docker_yum_gpgkey: "https://yum.dockerproject.org/gpg"
+docker_yum_repo: "https://download.docker.com/linux/centos/docker-ce.repo"
+docker_yum_gpgkey: "https://download.docker.com/linux/centos/gpg"
+docker_package_name: "docker-ce"
 
 # Name of the Docker group
 docker_group: "docker"
